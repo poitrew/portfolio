@@ -23,7 +23,7 @@ button {
 
 .container {
 	width: 330px;
-	margin: 150px auto 0px;
+	margin: 150px auto 150px;
 }
 
 .btn {
@@ -48,7 +48,7 @@ button {
 /* HERO SECTION */
 
 .hero {
-	height: 100vh;
+	min-height: 100vh;
 	color: white;
 	font-family: 'Poppins', sans-serif;
 }
@@ -165,7 +165,7 @@ button {
 /* PROJECTS */
 
 .projects {
-	height: 100vh;
+	min-height: 100vh;
 	font-family: 'Poppins', sans-serif;
 }
 
