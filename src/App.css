@@ -86,6 +86,12 @@ ul {
 	font-weight: 300;
 }
 
+.nav-info .social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .opac {
 	opacity: 1;
 }
@@ -164,6 +170,7 @@ ul {
 .hero-ctas {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	margin-top: 90px;
 }
@@ -207,12 +214,6 @@ ul {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: calc(100% - 195px);
-}
-
-.projects-list p {
-	font-family: 'Ephesis', cursive;
-	font-size: 3em;
 }
 
 .project {
@@ -220,18 +221,21 @@ ul {
 	background-color: #333;
 	width: 90%;
 	margin-top: 50px;
-	border-radius: 5px;
 	color: #FAFAFA;
-	padding: 4vw;
-}
-
-.project:first-child {
-	margin-top: 100px;
+	border: 1px solid #333;
 }
 
 .project img {
 	width: 100%;
-	border-radius: 3px;
+	height: 200px;
+}
+
+.project *:not(:first-child) {
+	padding: 0px 20px;
+}
+
+.project .time {
+	color: #C4C4C4;
 }
 
 .project li {
@@ -258,6 +262,10 @@ ul {
 	color: #CACACA;
 	font-family: 'Poppins';
 	position: relative;
+}
+
+.contact .container {
+	margin-bottom: 0;
 }
 
 .contact-header {
@@ -306,7 +314,7 @@ ul {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 166.5%;
-	color: white;
+	color: white !important;
 	padding-left: 20px;
 }
 
@@ -314,11 +322,13 @@ ul {
 	box-sizing: border-box;
 	height: 240px;
 	padding: 22px;
+	resize: vertical;
 }
 
 footer {
 	position: absolute;
 	bottom: 0;
+	left: 0;
 	box-sizing: border-box;
 	width: 100%;
 	display: flex;
@@ -333,4 +343,77 @@ footer {
 
 footer * {
 	margin: 0;
+}
+
+/* RESPONSIVE TABLET */
+
+@media (min-width: 768px) {
+	.container {
+		width: 80%;
+	}
+
+	.hero-main span {
+		font-size: 6em;
+	}
+
+	.hero-main h1 {
+		font-size: 5em;
+	}
+
+	.project img {
+		height: auto;
+	}
+}
+
+@media (min-width: 992px) { 
+
+	.nav {
+		padding: 0px 20vw;
+	}
+
+	.hero-ctas {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	.hero-ctas a {
+		margin: 0;
+	}
+
+	.hero-ctas a:hover {
+		transform: translateY(-10px);
+	}
+
+	.projects-header {
+		padding: 100px 0px 300px;
+	}
+
+	.projects-list {
+		background-color: #FAFAFA;
+		margin: -200px auto;
+		padding: 100px;
+		width: 80%;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+		gap: 50px;
+	}
+
+	.project {
+		width: 100%;
+		height: 700px;
+		margin: 0;
+		border-radius: 2px;
+	}
+
+	.container {
+		width: 60%;
+	}
+
+	.br {
+		display: none;
+	}
+
+	.contact-header {
+		font-size: 2.5em;
+	}
 }

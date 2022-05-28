@@ -14,6 +14,7 @@ function NavInfo({ opacityAnim, setOpac, handleClick }) {
                 <p>+84 901 208 303</p>
                 <p>Ho Chi Minh, Viet Nam</p>
             </div>
+            <div className='social'></div>
         </div>
     )
 }
