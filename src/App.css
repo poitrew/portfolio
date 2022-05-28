@@ -230,7 +230,7 @@ ul {
 	height: 200px;
 }
 
-.project *:not(:first-child) {
+.project-desc {
 	padding: 0px 20px;
 }
 

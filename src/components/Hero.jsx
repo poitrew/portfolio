@@ -40,7 +40,7 @@ function Hero() {
                 </div>
                 <div className="hero-ctas">
                     <a className="btn" href='#projects'>See my works</a>
-                    <a className="btn" href='#'>Download resume</a>
+                    <a className="btn" href='./dangthanhdat_resume.pdf' download='DangThanhDat_resume.pdf'>Download resume</a>
                 </div>
             </div>
 		</section>
