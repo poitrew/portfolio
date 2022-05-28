@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import ham from '../ham.svg'
 import NavInfo from './NavInfo';
 
 function Hero() {
@@ -25,7 +24,7 @@ function Hero() {
         <section className='hero'>
             <nav className='nav'>
                 <a className='nav-logo' href="#">{navMobileOn ? "Information" : "Poitrew"}</a>
-                <img className={navMobileOn ? 'nav-toggle rotate' : 'nav-toggle'} onClick={toggleNav} src={ham}></img>
+                <img className={navMobileOn ? 'nav-toggle rotate' : 'nav-toggle'} onClick={toggleNav} src='./src/assets/ham.svg'></img>
                 {navMobileOn 
                     ? 
                         <NavInfo handleClick={toggleNav} opacityAnim={opacityAnim} setOpac={setOpac} />
