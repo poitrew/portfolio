@@ -23,7 +23,7 @@ function Hero() {
     return (
         <section className='hero'>
             <nav className='nav'>
-                <a className='nav-logo' href="#">{navMobileOn ? "Information" : "Poitrew"}</a>
+                <a className='nav-logo' href="#">{navMobileOn ? "Information" : "Henry Dang"}</a>
                 <img className={navMobileOn ? 'nav-toggle rotate' : 'nav-toggle'} onClick={toggleNav} src='./ham.svg'></img>
                 {navMobileOn 
                     ? 
@@ -35,7 +35,7 @@ function Hero() {
             <div className="container">
                 <div className="hero-main">
                     <span>Hello,</span>
-                    <h1>I'm Thanh Dat</h1>
+                    <h1>I'm Henry</h1>
                     <p>a front-end web developer who loves building beautiful, elegant, and user-friendly websites.</p>
                 </div>
                 <div className="hero-ctas">
