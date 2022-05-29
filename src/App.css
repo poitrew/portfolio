@@ -10,6 +10,7 @@ html {
 
 body {
 	background-color: #FAFAFA;
+	font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -26,8 +27,13 @@ ul {
 	list-style: none;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 .container {
-	width: 330px;
+	width: 60%;
 	margin: 150px auto 150px;
 }
 
@@ -46,16 +52,14 @@ ul {
 }
 
 .btn:hover {
-	color: #F5E86A;
+	color: #00dfc0;
 	background-color: #000;
 }
 
-/* HERO SECTION */
+/* ------------------------------------------- HERO SECTION ------------------------------------------- */
 
 .hero {
-	min-height: 100vh;
 	color: white;
-	font-family: 'Poppins', sans-serif;
 }
 
 .nav-info {
@@ -64,7 +68,7 @@ ul {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: rgba(72, 71, 57, 0.95);
+	background: #2a454e;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -113,7 +117,7 @@ ul {
 }
 
 .nav-logo:hover {
-	color: #F5E86A;
+	color: #00dfc0;
 }
 
 .nav-toggle {
@@ -140,7 +144,7 @@ ul {
 }
 
 .hero-main *:hover {
-	color: #F5E86A;
+	color: #00dfc0;
 }
 
 .hero-main span {
@@ -161,7 +165,6 @@ ul {
 }
 
 .hero-main p {
-	font-family: 'Poppins', sans-serif;
 	line-height: 20px;
 	letter-spacing: 0.1em;
 	margin: 17px 0;
@@ -178,17 +181,48 @@ ul {
 .hero-ctas a {
 	margin-bottom: 70px;
 }
-/* PROJECTS */
+/* ------------------------------------------- ABOUT ------------------------------------------- */
+
+.about {
+	padding: 50px 0; 
+	background-color: #333;
+	color: #FAFAFA;
+}
+
+.about .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.about-text {
+	flex: 1;
+	text-align: center;
+}
+
+.about-img {
+	flex: 1;
+	box-shadow: -10px -10px 1px #00dfc0;
+	margin-top: 75px;
+}
+
+.about-text h2 {
+	font-size: 3em;
+	margin: 0;
+}
+
+/* ------------------------------------------- PROJECTS ------------------------------------------- */
 
 .projects {
 	min-height: 100vh;
-	font-family: 'Poppins', sans-serif;
 	padding-bottom: 100px;
 }
 
 .projects-header {
-	background-color: #333;
-	color: #f9f9f9;
+	background-color: #FAFAFA;
+	color: #333;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -198,7 +232,7 @@ ul {
 }
 
 .projects-header span {
-	color: #F5E86A;
+	color: #00dfc0;
 	font-family: 'Ephesis', cursive;
 	font-size: 3em;
 	margin: 0;
@@ -218,10 +252,10 @@ ul {
 
 .project {
 	box-sizing: border-box;
-	background-color: #333;
+	background-color: #fafafa;
 	width: 90%;
 	margin-top: 50px;
-	color: #FAFAFA;
+	color: #333;
 	border: 1px solid #333;
 }
 
@@ -260,11 +294,11 @@ ul {
 	background-position: center;
 	background-size: cover;
 	color: #CACACA;
-	font-family: 'Poppins';
 	position: relative;
 }
 
 .contact .container {
+	width: 100%;
 	margin-bottom: 0;
 }
 
@@ -309,7 +343,7 @@ ul {
 	border-radius: 3px;
 	outline: none;
 	background: rgba(217, 217, 217, 0.35);
-	font-family: 'Poppins';
+	font-family: inherit;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -363,6 +397,10 @@ footer * {
 	.project img {
 		height: auto;
 	}
+
+	.contact .container {
+		width: 80%;
+	}
 }
 
 @media (min-width: 992px) { 
@@ -384,12 +422,21 @@ footer * {
 		transform: translateY(-10px);
 	}
 
+	.about .container {
+		flex-direction: row;
+		gap: 50px;
+	}
+
+	.about-text {
+		text-align: left;
+	}
+
 	.projects-header {
 		padding: 100px 0px 300px;
 	}
 
 	.projects-list {
-		background-color: #FAFAFA;
+		background-color: #333;
 		margin: -200px auto;
 		padding: 100px;
 		width: 80%;
@@ -410,15 +457,16 @@ footer * {
 		transform: scale(1.1);
 	}
 
-	.container {
-		width: 60%;
-	}
-
 	.br {
 		display: none;
 	}
 
 	.contact-header {
 		font-size: 2.5em;
+	}
+
+	.contact-form {
+		width: 80%;
+		margin: auto;
 	}
 }
