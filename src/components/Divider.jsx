@@ -1,7 +1,6 @@
-export default function Divider() {
+export default function Divider(props) {
     return (
-        <div className="divider">
-
+        <div style={props.style} className="divider">
         </div>
     )
 }

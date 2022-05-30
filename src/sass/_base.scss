@@ -24,6 +24,10 @@ $main: #4aefdf;
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: $font-stack;
     background: $bright;

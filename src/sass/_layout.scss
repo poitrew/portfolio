@@ -121,11 +121,9 @@
 /* ------------------------------------- PROJECTS-SECTION ------------------------------------- */
 
 .projects-section {
-    margin: 150px 0px;
-
     &-header {
         margin-top: 50px;
-        padding: 100px 0 200px;
+        padding: 100px 0;
         background: $sub;
         color: $bright;
         text-align: center;
@@ -134,8 +132,7 @@
 
 .projects {
     box-sizing: border-box;
-    margin-top: -100px;
-    padding: 20px;
+    padding: 50px 0px;
     display: flex;
     justify-content: center;
     gap: 50px;
