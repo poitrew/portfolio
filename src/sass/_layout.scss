@@ -11,6 +11,10 @@
     align-items: center;
     padding: 20px 200px;
 
+    &-toggle {
+        display: none;
+    }
+
     &-logo {
         font-size: 2em;
         font-family: 'Great Vibes', cursive;
@@ -48,17 +52,18 @@
             transform: translateY(-5px);
         }
     }
+
+    &-social-mobile {
+        display: none;
+    }
 }
 
 /* ------------------------------------- HERO-SECTION ------------------------------------- */
 
-.hero-section {
-}
-
 .hero {
     padding: 175px 200px 50px;
 
-    .hero-text {
+    &-text {
         margin-bottom: 100px;
 
         span {
@@ -74,7 +79,7 @@
         }
     }
     
-    .hero-btns {
+    &-btns {
         display: flex;
         gap: 50px;
     }
@@ -107,6 +112,9 @@
 
     &-img {
         width: 50%;
+        border-right: 1px solid $dark;
+        border-bottom: 1px solid $dark;
+        box-shadow: -20px -20px 1px $main;
     }
 }
 
@@ -114,18 +122,13 @@
 
 .projects-section {
     margin: 150px 0px;
-}
 
-.projects-section-header {
-    margin-top: 50px;
-    padding: 100px 0 200px;
-    background: $sub;
-    color: $bright;
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    &-header {
+        margin-top: 50px;
+        padding: 100px 0 200px;
+        background: $sub;
+        color: $bright;
+        text-align: center;
     }
 }
 
@@ -185,7 +188,6 @@
 /* ------------------------------------- CONTACT-SECTION ------------------------------------- */
 
 .contact-section {
-    padding-top: 50px;
     background: $gray;
 
     .footer {
@@ -200,7 +202,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 50px;
+    padding: 100px 50px 50px;
     gap: 50px;
 
     &-text {

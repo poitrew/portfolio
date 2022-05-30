@@ -1,7 +1,15 @@
+import { useSpring, animated, config } from "react-spring"
+import { useEffect, useState } from "react"
+
 function Hero() {
+    const [anim, set] = useState(false)
+    const opaque = useSpring({ transform: anim ? 'translateY(0px)' : 'translateY(1000px)', config: config.slow, })
+
+    useEffect(() => set(!anim), [])
+
     return (
         <section className='hero-section'>
-            <div className="container">
+            <animated.div className='container' style={opaque}>
                 <div className="hero">
                     <div className="hero-text">
                         <h1>Hi, <br />I'm <span>Henry</span></h1>
@@ -20,7 +28,7 @@ function Hero() {
                         </a>
                     </div>
                 </div>
-            </div>
+            </animated.div>
 		</section>
     )
 }

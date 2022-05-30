@@ -4,7 +4,7 @@ function Contact() {
             <div className="container">
                 <div className="contact">
                     <div className="contact-text">
-                        <p>Wanna have a coffee and talk about how we can build things together, <span>Let me know.</span></p>
+                        <p>Wanna have a coffee and talk about how we can build things together? <span>Let me know.</span></p>
                     </div>
                     <form className="contact-form">
                         <div className="input-wrapper">

@@ -5,6 +5,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import About from './components/About'
 import Divider from './components/Divider'
+import { useSpring, animated } from 'react-spring'
 
 function App() {
 	return (
