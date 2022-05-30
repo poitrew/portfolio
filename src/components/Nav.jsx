@@ -12,7 +12,7 @@ export default function Nav() {
             <div className="nav-toggle" onClick={() => toggleNav(!navOn)}>
                 <img src="./icon-info.svg" alt="" />
             </div>
-            <animated.div className='nav-overlay' style={opaque}></animated.div>
+            <animated.div className='nav-overlay' onClick={() => toggleNav(!navOn)} style={opaque}></animated.div>
             <animated.ul className="nav-social-mobile" style={slide}>
                 <li className="nav-social-fb"><a href="https://www.facebook.com/thdatdg" target="_blank"><img src="./icon-fb.png" alt="" /></a></li>
                 <li><a href="https://github.com/poitrew" target="_blank"><img src="./icon-github.png" alt="" /></a></li>

@@ -61,7 +61,6 @@
         &-toggle {
             display: block;
             width: 28px;
-            z-index: 999;
         }
 
         &-overlay {
@@ -88,6 +87,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            z-index: 999;
             
             li {
                 margin: 20px 0;
