@@ -12,7 +12,7 @@ function App() {
 	const navRef = useSpringRef()
 	const slideUp = useSpring({ to: { bottom: 0 }, from: { bottom: -1000 }, config: config.slow, ref: heroRef })
 	const slideDown = useSpring({ to: { top: 0 }, from: { top: -100 }, config: config.slow, ref: navRef })
-	useChain([heroRef, navRef], [0, 0.5])
+	useChain([navRef, heroRef], [0, 0.5])
 	const AnimatedNav = animated(Nav)
 	const AnimatedHero = animated(Hero)
 	const AnimatedDivier = animated(Divider)
