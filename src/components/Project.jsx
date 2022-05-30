@@ -4,11 +4,11 @@ export default function Project({ name, previewImg, link, desc, time, techs }) {
             <a href={link} target="_blank">
                 <img src={`./${previewImg}`} alt="" />
                 <div className="project-desc">
-                    <h1>{name}</h1>
+                    <h3>{name}</h3>
                     <p>{desc}</p>
                     <p className="time">{time}</p>
                     <ul>
-                        {techs.map((item, index) => <li key={index}>{item}</li>)}
+                        {techs.map((item, index) => <li key={index}><img src={`./${item.img}`} alt="" />{item.name}</li>)}
                     </ul>
                 </div>
             </a>

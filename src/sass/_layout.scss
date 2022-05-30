@@ -1,0 +1,233 @@
+.container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+/* ------------------------------------- NAVIGATION ------------------------------------- */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+
+    &-logo {
+        font-size: 2em;
+        font-family: 'Great Vibes', cursive;
+        background: linear-gradient(to right, #000000, #4aefdf);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &-social {
+        display: flex;
+        gap: 1em;
+
+        &-fb:hover {
+            filter: invert(44%) sepia(65%) saturate(4969%) hue-rotate(198deg) brightness(102%) contrast(104%);
+        }
+
+        &-ins:hover {
+            filter: invert(18%) sepia(90%) saturate(5775%) hue-rotate(328deg) brightness(98%) contrast(107%);
+        }
+
+        &-linkedin:hover {
+            filter: invert(29%) sepia(88%) saturate(4621%) hue-rotate(198deg) brightness(88%) contrast(92%);
+        }
+
+        &-twitter:hover {
+            filter: invert(65%) sepia(49%) saturate(6285%) hue-rotate(178deg) brightness(97%) contrast(93%);
+        }
+
+        li {
+            transition: transform .4s;
+        }
+
+        li:hover {
+            transform: translateY(-5px);
+        }
+    }
+}
+
+/* ------------------------------------- HERO-SECTION ------------------------------------- */
+
+.hero-section {
+}
+
+.hero {
+    padding: 175px 200px 50px;
+
+    .hero-text {
+        margin-bottom: 100px;
+
+        span {
+            color: $main;
+        }
+
+        h1 {
+            width: fit-content;
+        }
+
+        p {
+            width: 500px;
+        }
+    }
+    
+    .hero-btns {
+        display: flex;
+        gap: 50px;
+    }
+}
+
+/* ------------------------------------- ABOUT-SECTION ------------------------------------- */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 0;
+
+    &-text  {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            margin-bottom: 25px;
+        }
+
+        p {
+            width: 50%;
+        }
+    }
+
+    &-img {
+        width: 50%;
+    }
+}
+
+/* ------------------------------------- PROJECTS-SECTION ------------------------------------- */
+
+.projects-section {
+    margin: 150px 0px;
+}
+
+.projects-section-header {
+    margin-top: 50px;
+    padding: 100px 0 200px;
+    background: $sub;
+    color: $bright;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.projects {
+    box-sizing: border-box;
+    margin-top: -100px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    
+    .project {
+        max-width: 35%;
+        background: $bright;
+        border-radius: 5px;
+        box-shadow: 0 3px 10px $dark;
+        flex: auto;
+
+        img {
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        &-desc {
+            padding: 20px;
+
+            h3 {
+                background: linear-gradient(to right, #4aefdf, #333);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                line-height: 3;
+            }
+            
+            .time {
+                color: $sub;
+                font-weight: 700;
+                line-height: 5;
+            }
+    
+            li {
+                position: relative;
+                margin-left: 40px;
+                margin-bottom: 10px;
+    
+                img {
+                    width: 24px;
+                    position: absolute;
+                    left: -40px;
+                }
+            }
+        }
+    }
+}
+
+/* ------------------------------------- CONTACT-SECTION ------------------------------------- */
+
+.contact-section {
+    padding-top: 50px;
+    background: $gray;
+
+    .footer {
+        background: $sub;
+        padding: 20px 0;
+        text-align: center;
+        color: $bright;
+    }
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+
+    &-text {
+        width: 30%;
+        font-size: 2em;
+        color: $bright;
+
+        span {
+            display: block;
+            color: $main;
+            font-weight: 700;
+        }
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        button {
+            align-self: center;
+            border: none;
+            background: linear-gradient(to left, $main, white);
+        }
+        
+        button:hover {
+            background: $dark;
+        }
+    }
+}

@@ -1,46 +1,24 @@
-import { useState } from 'react';
-import NavInfo from './NavInfo';
-
 function Hero() {
-    let [navMobileOn, setNavMobileOn] = useState(false)
-    let [opacityAnim, setOpacityAnim] = useState(false)
-
-    function toggleNav() {
-        setOpacityAnim(false)
-        if(navMobileOn) {
-            setTimeout(() => {
-                setNavMobileOn(!navMobileOn)
-            }, 500);
-        } else {
-            setNavMobileOn(!navMobileOn)
-        }
-    }
-
-    function setOpac() {
-        setOpacityAnim(!opacityAnim)
-    }
-
     return (
-        <section className='hero'>
-            <nav className='nav'>
-                <a className='nav-logo' href="#">{navMobileOn ? "Information" : "Henry Dang"}</a>
-                <img className={navMobileOn ? 'nav-toggle rotate' : 'nav-toggle'} onClick={toggleNav} src='./ham.svg'></img>
-                {navMobileOn 
-                    ? 
-                        <NavInfo handleClick={toggleNav} opacityAnim={opacityAnim} setOpac={setOpac} />
-                    : 
-                        (<></>)
-                }
-            </nav>
+        <section className='hero-section'>
             <div className="container">
-                <div className="hero-main">
-                    <span>Hello,</span>
-                    <h1>I'm Henry</h1>
-                    <p>a front-end web developer who loves building beautiful, elegant, and user-friendly websites.</p>
-                </div>
-                <div className="hero-ctas">
-                    <a className="btn" href='#projects'>See my works</a>
-                    <a className="btn" href='./dangthanhdat_resume.pdf' download='DangThanhDat_resume.pdf'>Download resume</a>
+                <div className="hero">
+                    <div className="hero-text">
+                        <h1>Hi, <br />I'm <span>Henry</span></h1>
+                        <p>a front-end web developer who loves building beautiful, elegant, and user-friendly websites.</p>
+                    </div>
+                    <div className="hero-btns">
+                        <a className="btn" href='#projects'>
+                            <button>Projects</button>
+                        </a>
+                        <a 
+                            className="btn" 
+                            href='./dangthanhdat_resume.pdf' 
+                            download='DangThanhDat_resume.pdf'
+                        >
+                            <button>Download resume</button>
+                        </a>
+                    </div>
                 </div>
             </div>
 		</section>

@@ -10,15 +10,18 @@ function Projects() {
     } 
 
     return (
-        <section className="projects" id="projects">
-            <div className="projects-header">
-                <span>Projects</span>
-                <p>From design to code</p>
+        <section className="projects-section" id="projects">
+            <div className="projects-section-header">
+                    <div className="container">
+                        <h2>Projects</h2>
+                    </div>
             </div>
-            <div className="projects-list">
-            {
-                generateProject(data)
-            }
+            <div className="container">
+                <div className="projects">
+                {
+                    generateProject(data)
+                }
+                </div>
             </div>
         </section>
     )

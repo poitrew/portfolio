@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;700&display=swap');
+
+$font-stack: 'Poppins', Helvetica, sans-serif;
+$bright: white;
+$dark: #111111;
+$gray: #333333;
+$sub: #2a454e;
+$main: #4aefdf;
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: $gray;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $main;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-stack;
+    background: $bright;
+    color: $dark;
+}
+
+h1 {
+    font-size: 6em;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+label {
+    display: block;
+    color: $bright;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 400px;
+    height: 20px;
+    padding: 10px;
+    font-family: inherit;
+    border-radius: 5px;
+    outline: none;
+    background: linear-gradient(to left, $main, white);
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    width: 200px;
+    height: 75px;
+    font-family: inherit;
+    font-weight: 700;
+    padding: 20px 15px;
+    background: $main;
+    color: $dark;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: $dark;
+    color: $bright;
+}
+
+ul {
+    list-style: none;
+}
+
+.divider {
+    width: 30%;
+    height: 1px;
+    margin: 50px auto;
+    background-color: $dark;
+}
