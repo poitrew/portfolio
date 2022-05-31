@@ -59,7 +59,6 @@
     .nav {
         backdrop-filter: none;
         -webkit-backdrop-filter: none;
-        height: 100vh;
 
         &-toggle {
             display: block;
@@ -72,9 +71,9 @@
     
         &-social-mobile {
             position: fixed;
+            height: 100vh;
             top: 0;
             right: 0;
-            bottom: 0;
             background: $bright;
             display: flex;
             flex-direction: column;
