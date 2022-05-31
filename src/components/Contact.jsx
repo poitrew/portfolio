@@ -23,9 +23,6 @@ function Contact() {
                     </form>
                 </div>
             </div>
-            <footer className="footer">
-                <p>Built and design by Poitrew a.k.a Dat Dang.<br />Copyright © 2022 All Rights Reserved.</p>
-            </footer>
         </section>
     )
 }
