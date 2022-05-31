@@ -67,26 +67,25 @@
 /* ------------------------------------- HERO-SECTION ------------------------------------- */
 
 .hero-section {
-    height: 100%;
+    height: calc(100% - 80px);
+    padding-top: 80px;
     position: relative;
     display: flex;
     align-items: center;
 }
 
 .hero {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+
     &-text {
         margin-bottom: 100px;
+        width: 70%;
 
         span {
             color: $sub;
-        }
-
-        h1 {
-            width: fit-content;
-        }
-
-        p {
-            width: 500px;
         }
     }
     
@@ -104,7 +103,6 @@
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    padding: 50px 0;
 
     &-text  {
         text-align: center;
@@ -115,7 +113,7 @@
 
         h2 {
             margin-bottom: 25px;
-            color: #de7d23;
+            color: $opposite;
             text-shadow: 2px 2px 1px $sub;
         }
 
@@ -198,12 +196,13 @@
     height: 100%;
     display: flex;
     align-items: center;
+    background-color: $sub;
 
     .footer {
-        background: $gray;
+        background: $dark;
         padding: 20px 0;
         text-align: center;
-        color: $main;
+        color: $gray;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -213,11 +212,11 @@
 
 .contact {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 
     &-text {
-        width: 30%;
+        width: 50%;
         font-size: 2em;
         color: $bright;
 

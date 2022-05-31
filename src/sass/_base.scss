@@ -2,18 +2,18 @@
 
 $font-stack: 'Poppins', Helvetica, sans-serif;
 $bright: white;
-$dark: #111111;
-$gray: #003730;
-$opposite: #F49D49;
-$sub: #006257;
-$main: #4aefdf;
+$dark: #404040;
+$gray: #02D4B4;
+$opposite: #FFA01C;
+$sub: #018673;
+$main: #FFA01C;
 
 ::-webkit-scrollbar {
     width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: $gray;
+    background: $bright;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -88,8 +88,8 @@ button {
     font-family: inherit;
     font-weight: 700;
     padding: 20px 15px;
-    background: $opposite;
-    color: $dark;
+    background: $main;
+    color: $bright;
     border: 1px solid white;
     border-radius: 5px;
     cursor: pointer;

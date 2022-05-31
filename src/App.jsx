@@ -4,7 +4,6 @@ import Hero from './components/Hero'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import About from './components/About'
-import Divider from './components/Divider'
 import { useSpring, useSpringRef, useChain, animated, config, } from 'react-spring'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
@@ -36,7 +35,6 @@ function App() {
 					speed={0.5}>
 					<Projects />
 				</ParallaxLayer>
-				<ParallaxLayer offset={3} speed={2} style={{background: '#006257'}}/>
 				<ParallaxLayer
 					offset={3}
 					speed={0.5}>

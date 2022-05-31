@@ -5,8 +5,8 @@ function Hero(props) {
             <div className='container' style={props}>
                 <div className="hero">
                     <div className="hero-text">
-                        <h1>Hi, <br />I'm <span>Henry</span></h1>
-                        <p>a front-end web developer who loves building beautiful, elegant, and user-friendly websites.</p>
+                        <h1>Hi, I'm <span>Henry</span></h1>
+                        <p>a front-end web developer based in HCM City, Vietnam. I enjoy building modern, elegant, and user-friendly websites.</p>
                     </div>
                     <div className="hero-btns">
                         <a className="btn" href='#projects'>
