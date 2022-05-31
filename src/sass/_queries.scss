@@ -132,7 +132,16 @@
         flex-direction: column;
 
         &-text {
-            width: 100%;
+            width: 80%;
+            margin-bottom: 30px;
+        }
+
+        &-form {
+            width: 80%;
+
+            input, textarea {
+                width: calc(100% - 20px);
+            }
         }
     }
 }

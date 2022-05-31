@@ -3,8 +3,9 @@
 $font-stack: 'Poppins', Helvetica, sans-serif;
 $bright: white;
 $dark: #111111;
-$gray: #333333;
-$sub: #2a454e;
+$gray: #003730;
+$opposite: #F49D49;
+$sub: #006257;
 $main: #4aefdf;
 
 ::-webkit-scrollbar {
@@ -16,7 +17,7 @@ $main: #4aefdf;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: $main;
+    background: $opposite;
 }
 
 *, *::after, *::before {
@@ -74,7 +75,7 @@ input, textarea {
     font-family: inherit;
     border-radius: 5px;
     outline: none;
-    background: linear-gradient(to left, $main, white);
+    background: $bright;
 }
 
 textarea {
@@ -87,7 +88,7 @@ button {
     font-family: inherit;
     font-weight: 700;
     padding: 20px 15px;
-    background: $main;
+    background: $opposite;
     color: $dark;
     border: 1px solid white;
     border-radius: 5px;
