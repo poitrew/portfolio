@@ -17,7 +17,6 @@ export default function Projects() {
             } else {
                 pageNumb += 1
             }
-            console.log(pageNumb)
             parallax.current.scrollTo(pageNumb)
         }
     }
@@ -28,7 +27,6 @@ export default function Projects() {
             } else {
                 pageNumb -= 1;
             }
-            console.log("prev", pageNumb)
             parallax.current.scrollTo(pageNumb)
         }
     }
@@ -40,7 +38,7 @@ export default function Projects() {
                 <ParallaxLayer 
                     offset={index} 
                     key={project.id} 
-                    speed={0.5} 
+                    speed={1} 
                     style={{ 
                         display: 'flex',
                         alignItems: 'center',

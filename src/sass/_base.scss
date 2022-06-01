@@ -110,8 +110,9 @@ ul {
 }
 
 .divider {
+    max-width: 800px;
     width: 30%;
     height: 1px;
-    margin: 50px auto;
+    margin: 150px auto 0px;
     background-color: $dark;
 }

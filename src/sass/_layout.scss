@@ -1,7 +1,6 @@
 .container {
     max-width: 1500px;
-    padding-top: 30vh;
-    margin: auto;
+    margin: 25vh auto 0px;
 }
 
 /* ------------------------------------- NAVIGATION ------------------------------------- */
@@ -65,31 +64,34 @@
 /* ------------------------------------- HERO-SECTION ------------------------------------- */
 
 .hero-section {
-    height: calc(100% - 80px);
     position: relative;
     display: flex;
-    align-items: center;
-}
-
-.hero {
-    height: 100%;
-    display: flex;
     flex-direction: column;
-    padding-left: 200px;
+    justify-content: center;
+    align-items: center;
 
-    &-text {
-        width: 70%;
+    .hero {
+        padding-left: 200px;
+        display: flex;
+        flex-direction: column;
+    
+        &-text { 
+            p {
+                width: 70%;
+            }
 
-        span {
-            color: $sub;
+            span {
+                color: $sub;
+            }
+        }
+        
+        &-btns {
+            display: flex;
+            gap: 50px;
         }
     }
-    
-    &-btns {
-        display: flex;
-        gap: 50px;
-    }
 }
+
 
 /* ------------------------------------- ABOUT-SECTION ------------------------------------- */
 
@@ -156,21 +158,26 @@
 
         .project {
             width: 50%;
+            height: 50%;
             margin: 0 auto;
             background: $dark;
             color: $bright;
             border-radius: 5px;
             box-shadow: 0 3px 10px $dark;
             overflow: hidden;
-    
+
             &-desc {
-                padding: 20px;
+                padding: 20px 50px; 
     
                 h3 {
                     background: $opposite;
                     background-clip: text;
                     -webkit-background-clip: text;
                     color: transparent;
+                }
+
+                p {
+                    width: 60%;
                 }
                 
                 .time {
@@ -201,7 +208,7 @@
     align-items: center;
 
     .container {
-        padding-top: 10vh;
+        margin: 100px auto 0;
     }
 
     .contact {
