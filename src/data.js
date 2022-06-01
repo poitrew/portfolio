@@ -37,6 +37,10 @@ export const projects = [
                 "img": 'icon-css.png',
                 "name": 'CSS',
             },
+            {
+                "img": 'icon-figma.svg',
+                "name": 'Figma',
+            },
         ],
     },
 ]
