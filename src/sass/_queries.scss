@@ -28,8 +28,14 @@
     }
 
     .projects {
-        .project {
-            width: 55%;
+        .project-wrapper {
+            .project-nav {
+                width: 22.5%;
+            }
+    
+            .project {
+                width: 55%;
+            }
         }
     }
 
@@ -130,8 +136,14 @@
     }
 
     .projects {
-        .project {
-            width: 60%;
+        .project-wrapper {
+            .project-nav {
+                width: 20%;
+            }
+    
+            .project {
+                width: 60%;
+            }
         }
     }
 
