@@ -126,6 +126,9 @@
 /* ------------------------------------- PROJECTS-SECTION ------------------------------------- */
 
 .projects-section {
+    margin-top: 30vh;
+    padding-bottom: 100vh;
+
     &-header {
         color: $sub;
         text-shadow: 2px 2px 1px $opposite;
@@ -133,52 +136,58 @@
     }
 }
 
-.projects {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+.projects {   
+    .project-wrapper {
+        display: flex;
 
-    
-    .project {
-        width: 50%;
-        background: $bright;
-        border-radius: 5px;
-        box-shadow: 0 3px 10px $dark;
-        flex: auto;
-
-        img {
-            max-width: 500px;
-            overflow: hidden;
-            border-radius: 5px;
+        .project-nav {
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            
+            span {
+                color: $bright;
+                font-size: 5em;
+                position: relative;
+            }
         }
 
-        &-desc {
-            padding: 20px;
-
-            h3 {
-                background: $opposite;
-                background-clip: text;
-                -webkit-background-clip: text;
-                color: transparent;
-                line-height: 3;
-            }
-            
-            .time {
-                color: $opposite;
-                font-weight: 700;
-                line-height: 5;
-            }
+        .project {
+            width: 50%;
+            margin: 0 auto;
+            background: $dark;
+            color: $bright;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px $dark;
+            overflow: hidden;
     
-            li {
-                position: relative;
-                margin-left: 40px;
-                margin-bottom: 10px;
+            &-desc {
+                padding: 20px;
     
-                img {
-                    width: 24px;
-                    position: absolute;
-                    left: -40px;
+                h3 {
+                    background: $opposite;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                }
+                
+                .time {
+                    color: $opposite;
+                    font-weight: 700;
+                }
+        
+                li {
+                    position: relative;
+                    margin-left: 40px;
+                    margin-bottom: 15px;
+        
+                    img {
+                        width: 24px;
+                        position: absolute;
+                        left: -40px;
+                    }
                 }
             }
         }
@@ -190,6 +199,10 @@
 .contact-section {
     display: flex;
     align-items: center;
+
+    .container {
+        padding-top: 10vh;
+    }
 
     .contact {
         box-sizing: border-box;

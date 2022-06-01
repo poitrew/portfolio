@@ -1,28 +1,78 @@
 import Project from './Project'
 import { projects as data } from '../data.js'
+import { useRef } from 'react'
+import { useSpring, animated, config } from 'react-spring'
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
-function Projects() {
+export default function Projects() {
 
-    function generateProject(data) {
-        return data.map(project => {
-            return (<Project key={project.id} {...project} />)
+    const parallax = useRef()
+
+    let pageNumb = 0
+
+    const nextPage = () => {
+        if (parallax.current) {
+            if (pageNumb === data.length - 1) {
+                pageNumb = 0;
+            } else {
+                pageNumb += 1
+            }
+            console.log(pageNumb)
+            parallax.current.scrollTo(pageNumb)
+        }
+    }
+    const prevPage = () => {
+        if (parallax.current) {
+            if (pageNumb === 0) {
+                pageNumb = data.length - 1;
+            } else {
+                pageNumb -= 1;
+            }
+            console.log("prev", pageNumb)
+            parallax.current.scrollTo(pageNumb)
+        }
+    }
+    const jiggle = useSpring({bottom: 0, from: {bottom: 10}, loop: {reverse: true}, config: {duration: 500}})
+
+    const generateProject = (data) => {
+        return data.map((project, index) => {
+            return (
+                <ParallaxLayer 
+                    offset={index} 
+                    key={project.id} 
+                    speed={0.5} 
+                    style={{ 
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                    }}>
+                    <div className='project-wrapper'>
+                        <div className='project-nav' onClick={prevPage}>
+                            <animated.span style={jiggle}>{'<'}</animated.span>
+                        </div>
+                        <Project {...project}/>
+                        <div className='project-nav' onClick={nextPage}>
+                            <animated.span style={jiggle}>{'>'}</animated.span>
+                        </div>
+                    </div>
+                </ParallaxLayer>)
         })
     } 
 
     return (
         <section className="projects-section" id="projects">
-            <div className="container">
                 <div className="projects-section-header">
                     <h2>Projects</h2>
                 </div>
                 <div className="projects">
-                {
-                    generateProject(data)
-                }
+                    <Parallax 
+                        pages={data.length} 
+                        horizontal
+                        ref={parallax}
+                        style={{background: '#018673'}}>
+                        {generateProject(data)}
+                    </Parallax>
                 </div>
-            </div>
         </section>
     )
 }
-
-export default Projects
