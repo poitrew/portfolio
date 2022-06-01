@@ -11,12 +11,10 @@ function Projects() {
 
     return (
         <section className="projects-section" id="projects">
-            <div className="projects-section-header">
-                    <div className="container">
-                        <h2>Projects</h2>
-                    </div>
-            </div>
             <div className="container">
+                <div className="projects-section-header">
+                    <h2>Projects</h2>
+                </div>
                 <div className="projects">
                 {
                     generateProject(data)

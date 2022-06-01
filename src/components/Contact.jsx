@@ -22,6 +22,11 @@ function Contact() {
                         <button className="btn" type="submit">Send</button>
                     </form>
                 </div>
+                <footer className="footer">
+                    Built and designed by Henry Dang a.k.a Dat Dang.
+                    <br />
+                    Copyright © 2022 All Rights Reserved.
+                </footer>
             </div>
         </section>
     )

@@ -134,6 +134,7 @@
         &-text {
             width: 80%;
             margin-bottom: 30px;
+            font-size: 1em;
         }
 
         &-form {
@@ -141,10 +142,6 @@
 
             input, textarea {
                 width: calc(100% - 20px);
-            }
-
-            button {
-                margin-top: 50px;
             }
         }
     }

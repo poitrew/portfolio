@@ -5,7 +5,6 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import About from './components/About'
 import { useSpring, useSpringRef, useChain, animated, config, } from 'react-spring'
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 function App() {
 	const heroRef = useSpringRef()
@@ -19,29 +18,10 @@ function App() {
 	return (
 		<>
 			<AnimatedNav style={slideDown }/>
-			<Parallax pages={4} style={{top: 0, left: 0}}>
-				<ParallaxLayer
-					offset={0}
-					speed={0.5}>
-					<AnimatedHero style={slideUp} />
-				</ParallaxLayer>
-				<ParallaxLayer
-					offset={1}
-					speed={0.5}>
-					<About />
-				</ParallaxLayer>
-				<ParallaxLayer
-					offset={2}
-					speed={0.5}>
-					<Projects />
-				</ParallaxLayer>
-				<ParallaxLayer
-					offset={3}
-					speed={0.5}>
-					<Contact />
-				</ParallaxLayer>
-			</Parallax>
-			
+			<AnimatedHero style={slideUp} />
+			<About />
+			<Projects />
+			<Contact />
 		</>
 	)
 }

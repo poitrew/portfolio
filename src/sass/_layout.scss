@@ -1,21 +1,19 @@
 .container {
     max-width: 1500px;
+    padding-top: 30vh;
     margin: auto;
 }
 
 /* ------------------------------------- NAVIGATION ------------------------------------- */
 
 .nav {
+    width: calc(100% - 10px);
+    padding: 20px 200px;
     box-sizing: border-box;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(100% - 10px);
-    padding: 20px 200px;
-    position: relative;
-    z-index: 1;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
 
     &-toggle {
         display: none;
@@ -68,7 +66,6 @@
 
 .hero-section {
     height: calc(100% - 80px);
-    padding-top: 80px;
     position: relative;
     display: flex;
     align-items: center;
@@ -81,7 +78,6 @@
     padding-left: 200px;
 
     &-text {
-        margin-bottom: 100px;
         width: 70%;
 
         span {
@@ -112,7 +108,6 @@
         justify-content: center;
 
         h2 {
-            margin-bottom: 25px;
             color: $opposite;
             text-shadow: 2px 2px 1px $sub;
         }
@@ -140,20 +135,20 @@
 
 .projects {
     box-sizing: border-box;
-    padding: 50px 0px;
     display: flex;
     justify-content: center;
     gap: 50px;
 
     
     .project {
-        max-width: 500px;
+        width: 50%;
         background: $bright;
         border-radius: 5px;
         box-shadow: 0 3px 10px $dark;
         flex: auto;
 
         img {
+            max-width: 500px;
             overflow: hidden;
             border-radius: 5px;
         }
@@ -193,53 +188,56 @@
 /* ------------------------------------- CONTACT-SECTION ------------------------------------- */
 
 .contact-section {
-    height: 100%;
     display: flex;
     align-items: center;
-    background-color: $sub;
+
+    .contact {
+        box-sizing: border-box;
+        padding: 50px;
+        background-color: $sub;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        &-text {
+            width: 50%;
+            font-size: 2em;
+            color: $bright;
+    
+            span {
+                display: block;
+                color: $main;
+                font-weight: 700;
+            }
+        }
+    
+        &-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+    
+            button {
+                align-self: center;
+                border: none;
+                margin-top: 20px;
+            }
+            
+            button:hover {
+                background: $dark;
+            }
+        }
+    }
 
     .footer {
         background: $dark;
         padding: 20px 0;
+        font-size: .8em;
+        color: $bright;
         text-align: center;
-        color: $gray;
-        position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
-    }
-}
-
-.contact {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    &-text {
-        width: 50%;
-        font-size: 2em;
-        color: $bright;
-
-        span {
-            display: block;
-            color: $main;
-            font-weight: 700;
-        }
-    }
-
-    &-form {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-
-        button {
-            align-self: center;
-            border: none;
-            margin-top: 20px;
-        }
-        
-        button:hover {
-            background: $dark;
-        }
     }
 }
