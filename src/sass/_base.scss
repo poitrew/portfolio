@@ -4,6 +4,7 @@ $font-stack: 'Poppins', Helvetica, sans-serif;
 $bright: white;
 $dark: #404040;
 $gray: #02D4B4;
+$shade: #008C4B;
 $opposite: #FFA01C;
 $sub: #018673;
 $main: #FFA01C;
@@ -77,6 +78,7 @@ input, textarea {
     height: 20px;
     padding: 10px;
     font-family: inherit;
+    border: 1px solid $bright;
     border-radius: 5px;
     outline: none;
     background: $bright;
@@ -113,6 +115,6 @@ ul {
     max-width: 800px;
     width: 30%;
     height: 1px;
-    margin: 150px auto 0px;
+    margin: 25vh auto 0px;
     background-color: $dark;
 }

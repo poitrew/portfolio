@@ -128,8 +128,9 @@
 /* ------------------------------------- PROJECTS-SECTION ------------------------------------- */
 
 .projects-section {
-    margin-top: 30vh;
+    margin-top: 25vh;
     padding-bottom: 100vh;
+    background-color: $bright;
 
     &-header {
         color: $sub;
@@ -139,8 +140,11 @@
 }
 
 .projects {   
+    background: linear-gradient(to right, rgba($sub, 0.8), rgba($opposite, 0.8));
+
     .project-wrapper {
         display: flex;
+        padding: 20px;
 
         .project-nav {
             width: 25%;
@@ -157,32 +161,26 @@
         }
 
         .project {
-            width: 50%;
-            height: 50%;
-            margin: 0 auto;
-            background: $dark;
-            color: $bright;
+            width: 75%;
+            height: 100%;
+            padding: 20px;
+            background: $bright;
+            color: $dark;
             border-radius: 5px;
             box-shadow: 0 3px 10px $dark;
             overflow: hidden;
+            display: flex;
+            align-items: center;
+
+            a {
+                border: 1px solid $sub;
+            }
 
             &-desc {
-                padding: 20px 50px; 
+                padding: 50px 0px 50px 50px;
     
-                h3 {
-                    background: $opposite;
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    color: transparent;
-                }
-
-                p {
-                    width: 60%;
-                }
-                
-                .time {
+                h3, .time {
                     color: $opposite;
-                    font-weight: 700;
                 }
         
                 li {
@@ -214,7 +212,7 @@
     .contact {
         box-sizing: border-box;
         padding: 50px;
-        background-color: $sub;
+        background: linear-gradient(to right, rgba($shade, 0.8), rgba($sub, 0.8));
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         display: flex;
