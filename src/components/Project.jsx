@@ -2,7 +2,7 @@ export default function Project({ name, previewImg, link, desc, time, techs }) {
     return (
         <div className="project">
             <a href={link} target="_blank">
-                <img src={`./${previewImg}`} alt="" />
+                <img className="project-img" src={`./${previewImg}`} alt="" />
                 <div className="project-desc">
                     <h3>{name}</h3>
                     <p>{desc}</p>

@@ -41,7 +41,6 @@ h1 {
 
 h2 {
     font-size: 4em;
-    margin-bottom: 30px;
 }
 
 h3 {
@@ -51,6 +50,9 @@ h3 {
 p {
     font-size: 1em;
     font-weight: 300;
+}
+
+h1, h2, h3, p {
     margin-bottom: 30px;
 }
 
@@ -111,6 +113,6 @@ ul {
 .divider {
     width: 30%;
     height: 1px;
-    margin: 50px auto;
+    margin: 25vh auto 0;
     background-color: $dark;
 }

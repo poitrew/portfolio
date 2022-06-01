@@ -23,9 +23,8 @@ function Contact() {
                     </form>
                 </div>
                 <footer className="footer">
-                    Built and designed by Henry Dang a.k.a Dat Dang.
-                    <br />
-                    Copyright © 2022 All Rights Reserved.
+                    <p>Built and designed by Henry Dang a.k.a Dat Dang.</p>
+                    <p>Copyright © 2022 All Rights Reserved.</p>
                 </footer>
             </div>
         </section>

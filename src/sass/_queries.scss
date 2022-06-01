@@ -1,21 +1,22 @@
 @media only screen and (max-width: 992px) {
-    h2 {
-        font-size: 3em;
-    }
-
-    input, textarea {
-        width: 300px;
-    }
-
     .nav {
         padding: 20px 100px;
     }
 
-    .hero {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
+    .hero-section {
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+
+            &-text {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     }
 
     .about {
@@ -27,29 +28,30 @@
         }
     }
 
-    .projects-section {
-        margin: 0;
-    } 
-
     .projects {
-        margin: 0;
-        padding: 50px;
-
         .project {
             max-width: 80%;
-        } 
-    }
-
-    .contact {
-        &-text {
-            font-size: 1.5em;
+            min-width: 0;
         }
     }
 }
 
+
 @media only screen and (max-width: 768px) {
     h1 {
-        font-size: 3em;
+        font-size: 4em;
+    }
+
+    h1, h2, h3, p {
+        margin-bottom: 20px;
+    }
+
+    .container {
+        margin: 15vh auto 0;
+    }
+
+    .divider {
+        margin: 15vh auto 0;
     }
 
     .nav {
@@ -94,54 +96,40 @@
         }
     }
 
-
     .hero-section {
-        margin: 50px auto 100px;
-    }
-
-    .hero {
-        padding: 0;
-
-        &-text {
-            padding: 50px 30px 0px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            p {
-                width: 100%;
+        .hero {
+            &-text {
+                padding: 0 30px;
             }
-        }
 
-        &-btns {
-            gap: 20px;
-            flex-direction: column;
+            &-btns {
+                flex-direction: column;
+            }
         }
     }
 
     .projects {
-        padding: 50px 20px;
-
         .project {
             max-width: 100%;
         }
     }
 
-    .contact {
-        flex-direction: column;
-
-        &-text {
-            width: 80%;
-            margin-bottom: 30px;
-            font-size: 1em;
-        }
-
-        &-form {
-            width: 80%;
-
-            input, textarea {
-                width: calc(100% - 20px);
+    .contact-section {
+        .contact {
+            flex-direction: column;
+    
+            &-text {
+                width: 100%;
+                margin-bottom: 30px;
+                font-size: 1.2em;
+            }
+    
+            &-form {
+                width: 100%;
+    
+                input, textarea {
+                    width: calc(100% - 20px);
+                }
             }
         }
     }
