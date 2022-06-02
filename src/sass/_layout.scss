@@ -145,6 +145,7 @@
     .project-wrapper {
         display: flex;
         padding: 20px;
+        max-height: 90vh;
 
         .project-nav {
             width: 25%;
@@ -162,13 +163,12 @@
 
         .project {
             width: 75%;
-            height: 100%;
             padding: 20px;
             background: $bright;
             color: $dark;
             border-radius: 5px;
             box-shadow: 0 3px 10px $dark;
-            overflow: hidden;
+            overflow: scroll;
             display: flex;
             align-items: center;
 
